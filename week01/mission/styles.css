@@ -1,0 +1,24 @@
+.content {
+    border: 1 px solid gray;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-content: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #006EB6
+}
+
+main {
+    text-align: left;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}

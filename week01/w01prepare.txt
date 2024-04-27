@@ -1,0 +1,14 @@
+Q: What are HTML meta elements, and why are they important?
+A: HTML meta elements provide metadata about the HTML document, such as character encoding (meta charset), viewport settings (meta viewport), and page description (meta description). They're important for proper interpretation by browsers and search engines.
+
+Q: What are CSS selectors, and can you give an example?
+A: CSS selectors target specific HTML elements for styling. Examples include tag selectors (e.g., p), class selectors (e.g., .main-body), and ID selectors (e.g., #header). They allow for precise styling of elements based on their attributes.
+
+Q: How do you use multiple selectors in one CSS rule?
+A: Multiple selectors can be combined in one CSS rule using compound selectors. For example, p.main-body targets paragraphs with the class main-body, applying specific styles to them.
+
+Q: What are CSS combinators, and can you provide examples?
+A: CSS combinators target elements based on their relationship with other elements in the HTML structure. Examples include descendant combinator (div p), child combinator (div > p), adjacent sibling combinator (h2 + p), and general sibling combinator (h2 ~ p).
+
+Q: Why are classes and IDs used in HTML and CSS?
+A: Classes and IDs are used to uniquely identify elements and apply styles to them. Classes are for grouping elements with similar characteristics, while IDs are for uniquely identifying individual elements.
