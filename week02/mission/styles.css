@@ -1,0 +1,41 @@
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h3 {
+    color: #A0D4ED;
+}
+
+.content {
+    border: 2px solid lightgray;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 150px;
+    line-height: 1.5;
+    width: 80%;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2em;
+}
+
+h3 {
+    color: #006EB6;
+    font-size: 1em;
+    border-bottom: 1px solid;
+}
+
+main {
+    text-align: left;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
