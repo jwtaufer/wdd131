@@ -21,7 +21,7 @@ nav {
     color: white;
     margin: 0 auto 2rem;
     max-width: 90vw;
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
