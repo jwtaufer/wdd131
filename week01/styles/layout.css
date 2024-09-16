@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template: auto 1fr auto / 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background: blue;
+    grid-column: 1/5;
+}
+
+main {
+    background: red;
+    grid-column: 1/4;
+}
+
+.aside-content {
+    grid-column: 4/5;
+}
