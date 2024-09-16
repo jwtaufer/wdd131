@@ -1,0 +1,11 @@
+ls #shows files in current directory
+
+cd ./foldername #opens folder within current folder
+
+cd .. #moves up a folder
+
+mkdir foldername #makes a new folder ("make directory") in current folder
+
+touch filename.py #makes new file
+
+code -r filename.py #opens file (in vscode)
