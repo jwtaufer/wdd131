@@ -4,15 +4,29 @@ body {
 }
 
 header {
-    background: blue;
+    background: #353535;
+    color: white;
     grid-column: 1/5;
 }
 
+nav, a {
+    background: #000000;
+    color: white;
+}
+
 main {
-    background: red;
+    background: #D2D2D2;
     grid-column: 1/4;
 }
 
 .aside-content {
     grid-column: 4/5;
+    background: #FFFFFF;
+}
+
+footer {
+    background: #353535;
+    color: white;
+    grid-column: 1/5;
+    text-align: center;
 }
