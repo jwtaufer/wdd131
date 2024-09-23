@@ -10,38 +10,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Jake Taufer</h1>
         <nav>
             <ul>
-                <li><a href="https://www.linkedin.com/in/jake-taufer-6b904ba7/" title="LinkedIn" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" title="I-Learn" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng&id=p11-p13#p11" title="Scripture" target="_blank">Scripture</a></li>
-                <li><a href="#" title="Final Project" target="_bl">Final Project</a></li>
+                <li><a href="https://www.linkedin.com/in/jake-taufer-6b904ba7/" alt="LinkedIn" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" alt="I-Learn" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=eng&id=p11-p13#p11" alt="Scripture" target="_blank">Scripture</a></li>
+                <li><a href="#" alt="Final Project" target="_bl">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="card" id="main">
             <h2>About Me</h2>
-            <p>Hello! My name is Jake Taufer and I'm from Layton, Utah, where I've lived for pretty much my entire life. I'm married to the most beautiful girl around, and we have three lovely children. They are the world to me. I paint houses for a living, but I'm excited to get into a job that is more lucrative and not quite so messy. I enjoy reading, sleeping, fishing, walking my dog, playing with my kids, and playing video games.</p>
-            <image src="/images/jake_fishing2.jpg"></image>
+            <image src="/images/jake_fishing2.jpg" alt="Jake Fishing" id="jake"></image>
+            <p>Hello! My name is Jake Taufer and I'm from Layton, Utah, where I've lived for pretty much my entire life. I'm married to the love of my life, and we have three gorgeous children. They are the world to me. I paint houses for a living, but I'm excited to get into a job that is more lucrative and not quite so messy. I enjoy reading, sleeping, fishing, walking my dog, playing with my kids, and playing video games.</p>
+            <h3>Utah, United States</h3>
+            <hr>
+            <img src="images/utahflag.png" alt="Utah Flag" id="flag">
+            <p>Utah is a beautiful desert state in the western United States of America. Surrounding it are the states of Idaho, Wyoming, Colorado, New Mexico, Arizona, and Nevada. Utah was settled by pioneers of the Church of Jesus Christ of Latter-days Saints, on July 24, 1847, who were seeking relief from religious persecution. Today, Utah is home to people of many different faiths and religious organizations, with the Church of Jesus Christ making up <a href="https://www.deseret.com/utah/2022/12/14/23507464/utah-religion-demographics/" target="_blank">56%</a> of the state's population.</p>
         </section>
         <section class="card" id="aside">
             <h2>Web Dev Resources</h2>
             <ul>
-                <li><a href="https://www.w3schools.com/" title="W3 Schools" target="_blank">W3 Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/" title="MDN Web Docs" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://google.github.io/styleguide/" title="Google Style Guides" target="_blank">Google Style Guides</a></li>
+                <li><a href="https://www.w3schools.com/" alt="W3 Schools" target="_blank">W3 Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" alt="MDN Web Docs" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://google.github.io/styleguide/" alt="Google Style Guides" target="_blank">Google Style Guides</a></li>
+                <li><a href="https://coolors.co/" alt="Coolors" target="_blank">Coolors</a></li>
             </ul>
         </section>
     </main>
     <footer>
-        <p><span id="currentyear"></span> | Jake Taufer | UT</p>
-        <p><span id="lastModified"></span></p>
+        <p>©<span id="currentyear"></span> | Jake Taufer | UT</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
