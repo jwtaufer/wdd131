@@ -1,0 +1,40 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header, main, footer {
+  display: block;
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 3px;
+  border-style: outset inset inset outset;
+  padding: 10px;
+  background-color: rgb(160, 212, 237);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  padding: 5px;
+  background-color: white;
+}
+
+@media screen and (min-width: 500px) {
+  header {
+    background-color: black;
+    color: white;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
