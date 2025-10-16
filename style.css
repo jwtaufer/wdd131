@@ -1,3 +1,54 @@
+/* https://coolors.co/palette/63e8f7-9c9e80-2b3f4e-dbdd90-efefad */
+
+:root {
+    --primary-color: #2B3F4E;
+    --secondary-color: #EFEFAD;
+    --accent-color: #63E8F7;
+    --text-dark: #2B3F4E;
+    --text-light: #EFEFAD;
+}
+
+body {
+    min-width: 95vw;
+    min-height: 95vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-light);
+}
+
+.sidebar {
+    grid-column: 1;
+    background-color: #9C9E80;
+    margin: 5px;
+    padding: 5px;
+    min-height: 85vh;
+}
+
+.main {
+    grid-column: 2;
+    min-width: 100%;
+    margin: 5px;
+}
+
+nav a {
+    display: block;
+}
+
 embed {
     display: block;
     width: 100%;
