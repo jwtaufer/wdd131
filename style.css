@@ -11,6 +11,7 @@
 body {
     min-width: 95vw;
     min-height: 95vh;
+    margin: 0;
 }
 
 header {
