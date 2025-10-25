@@ -1,11 +1,11 @@
 /* https://coolors.co/palette/63e8f7-9c9e80-2b3f4e-dbdd90-efefad */
 
 :root {
-    --primary-color: #2B3F4E;
-    --secondary-color: #EFEFAD;
-    --accent-color: #63E8F7;
-    --text-dark: #2B3F4E;
-    --text-light: #EFEFAD;
+    --primary-color: #1E2D3E;
+    --secondary-color: #B0E3EF;
+    --accent-color: #3BD2EA;
+    --text-dark: #101A25;
+    --text-light: #EAF7F9;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 10px;
+    text-align: center;
 }
 
 main {
@@ -34,10 +35,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar {
     grid-column: 1;
-    background-color: #9C9E80;
-    margin: 5px;
-    padding: 5px;
+    background-color: var(--secondary-color);
+    padding: 10px;
     min-height: 85vh;
+    /* text-align: right; */
 }
 
 .main {

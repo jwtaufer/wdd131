@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --gold: #EFC69B;
+    --red: #AF1B3F;
+    --dark: #473144;
+    --headline-font: "Lora", Impact, Serif;
+    --body-font: Helvetica, Arial, Sans-serif;
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    font: var(--body-font);
+    color: var(--dark);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding: 15px;
+}
+
+nav {
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
+    border-color: var(--gold);
+}
+
+nav ul {
+    grid-column: 3 / 4;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.article-details {
+    grid-column: 1 / 2;
+    border-right: var(--gold) solid 3px;
+    text-align: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+.article-content {
+    grid-column: 2 / 5;
+}
+
+.filters {
+    grid-column: 5 / 6;
+    grid-row: 1 / span 2;
+    border: var(--gold) solid 3px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: var(--headline-font);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.normal {
+    font-size: 1.1em;
+}
+
+.container {
+    display: grid;
+}
+
+.x2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.x3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.x5-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.red-font {
+    color: var(--red);
+}
+
+.skiptocontent {
+    float: left;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    color: white;
+    background-color: var(--red);
+    padding: 10px;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
