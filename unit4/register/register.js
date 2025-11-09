@@ -1,12 +1,14 @@
 // register.js
 
-let participants = {
-    count: 0
+const info = {
+    count: 0,
+    adultName: "",
+    fees: 0
 }
 
 function addParticipant() {
-    participants.count++;
-    participantTemplate(participants.count);
+    info.count++;
+    participantTemplate(info.count);
 }
 
 function participantTemplate(count) {
@@ -52,42 +54,34 @@ function participantTemplate(count) {
     document.querySelector("button#add").insertAdjacentHTML("beforebegin", html);
 }
 
-const info = {
-    
-}
-
 function successTemplate(info) {
     const html = `
-        <p>
+        <p>Thank you ${info.adultName} for registering. You have registered ${info.count} participants and owe ${info.fees} in Fees.</p>
     `
+    document.querySelector("#summary").innerHTML = html;
 }
 
 function submitForm(event) {
     // On submit we need to keep the form from doing what it normally would...which is to reload the page.
     event.preventDefault();
     // Then we need to find all of the fee inputs. There will be one for each participant that has been added. The totals from those fields need to be summed up.
-    const fees = sumFees();
+    info.fees = sumFees();
     // Get the adult name from the form.
-    const adultName = document.querySelector("#adult_name");
+    info.adultName = document.querySelector("#adult_name");
     // Hide the Form, and show the summary element. Insert the following message into the summary element: "Thank you NAME for registering. You have registered N participants and owe $N in Fees."
     document.querySelector("form").classList.add("hide");
-
-
+    successTemplate(info);
 }
 
 function sumFees() {
-    let sum = 0;
-    
     document.querySelectorAll('[name^="fee"]').forEach(fee => {
         const value = fee.value;
         const numberValue = parseFloat(value);
-        sum += numberValue;
+        info.count += numberValue;
     });
-
-    return sum;
 }
 
-window.addEventListener("load", () => {participants.count = 1});
+window.addEventListener("load", () => {info.count = 1});
 
 document.querySelector("button#add").addEventListener("click",addParticipant);
 
