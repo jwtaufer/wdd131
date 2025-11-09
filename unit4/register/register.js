@@ -56,7 +56,7 @@ function participantTemplate(count) {
 
 function successTemplate(info) {
     const html = `
-        <p>Thank you ${info.adultName} for registering. You have registered ${info.count} participants and owe ${info.fees} in Fees.</p>
+        <p>Thank you ${info.adultName} for registering. You have registered ${info.count} participants and owe $${info.fees} in Fees.</p>
     `
     document.querySelector("#summary").innerHTML = html;
 }
@@ -65,9 +65,9 @@ function submitForm(event) {
     // On submit we need to keep the form from doing what it normally would...which is to reload the page.
     event.preventDefault();
     // Then we need to find all of the fee inputs. There will be one for each participant that has been added. The totals from those fields need to be summed up.
-    info.fees = sumFees();
+    sumFees();
     // Get the adult name from the form.
-    info.adultName = document.querySelector("#adult_name");
+    info.adultName = document.querySelector("#adult_name").value;
     // Hide the Form, and show the summary element. Insert the following message into the summary element: "Thank you NAME for registering. You have registered N participants and owe $N in Fees."
     document.querySelector("form").classList.add("hide");
     successTemplate(info);
@@ -77,7 +77,7 @@ function sumFees() {
     document.querySelectorAll('[name^="fee"]').forEach(fee => {
         const value = fee.value;
         const numberValue = parseFloat(value);
-        info.count += numberValue;
+        info.fees += numberValue;
     });
 }
 
