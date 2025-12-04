@@ -8,7 +8,7 @@ Fonts are separated by a | */
   --primary-color: #223b4c;
   --secondary-color: #4d697b;
   --accent1-color: #d1eefe;
-  --accent2-color: white;
+  --accent2-color: #fafcfd;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Roboto Serif", "Times New Roman", serif;
