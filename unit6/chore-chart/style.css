@@ -13,10 +13,10 @@
 
 body {
     background-color: var(--accent2-color);
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 nav {
@@ -45,6 +45,8 @@ nav > ul > li > a:hover {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
