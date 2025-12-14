@@ -43,17 +43,17 @@ class Person {
 
         return `<div class="queue-box">
         <div class="name-box">
-            <h2>${this.name}: $${this.balance.toFixed(2)}</h2>
-            <button id="${nameId}-paid-button" type="button">Paid</button>
+            <h2>${this.name}<!--: $${this.balance.toFixed(2)}--></h2>
+            <!-- <button id="${nameId}-paid-button" type="button" onclick="${nameId}.resetBalance()">Paid</button> -->
         </div>
         <form>
             <ul>
                 ${this.chores.renderChoreTemplate()}
             </ul>
         </form>
-        <div id="button-box">
+        <!-- <div id="button-box">
             <button id="${nameId}-add-chore-button" type="button">Add Chore</button>
-        </div>
+        </div> -->
     </div>`
     }
 

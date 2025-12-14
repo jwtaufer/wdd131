@@ -44,15 +44,18 @@ function childPageTemplate() {
                     ${choreQueue.renderChoreTemplate()}
                 </ul>
             </form>
-            <div class="button-box">
+            <!-- <div class="button-box">
                 <button type="button">Add Chore</button>
-            </div>
+            </div> -->
         </div>`
 }
 
 initHomePage();
 initChildPage();
 
-// document.querySelector("#mom-paid-button").addEventListener("click", mom.resetBalance());
+document.querySelector("#mom-paid-button").addEventListener("click", mom.resetBalance());
+document.querySelector("#dad-paid-button").addEventListener("click", dad.resetBalance());
+document.querySelector("#roe-paid-button").addEventListener("click", roe.resetBalance());
+document.querySelector("#elise-paid-button").addEventListener("click", elise.resetBalance());
 
 // console.log(childPageTemplate());
