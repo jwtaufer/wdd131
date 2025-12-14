@@ -1,0 +1,50 @@
+class Queue {
+    constructor(name) {
+        this.name = name;
+        this.queue = [];
+
+        const imported = this.#import();
+        if (imported !== null) {
+            imported.forEach((chore) => this.queue.push(chore));
+        }
+    }
+
+    addChore(name, value, weight, difficulty, frequency) {
+        const chore = { name, value, weight, difficulty, frequency };
+        this.enqueue(chore);
+        this.#export();
+    }
+
+    completeChore() {
+        this.enqueue(this.dequeue());
+    }
+
+    enqueue(chore) {
+        this.queue.push(chore);
+        this.#export();
+    }
+
+    dequeue() {
+        let chore = this.queue.splice(0, 1).pop();
+        this.#export();
+        return chore;
+    }
+
+    #import() {
+        const stored = localStorage.getItem(this.name);
+        if (!stored) {
+            return null;
+        }
+        try {
+            return JSON.parse(stored);
+        } catch {
+            return null;
+        }
+    }
+
+    #export() {
+        localStorage.setItem(this.name, JSON.stringify(this.queue));
+    }
+}
+
+export default Queue;

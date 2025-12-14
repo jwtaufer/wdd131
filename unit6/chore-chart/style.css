@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* * {
+    border: red solid 1px;
+} */
+
 :root {
     --primary-color: #223b4c;
     --secondary-color: #4d697b;
@@ -45,6 +49,7 @@ nav > ul > li > a:hover {
 main {
     display: grid;
     grid-template-columns: 1fr;
+    min-width: 300px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -75,6 +80,11 @@ p {
     padding: 5px;
 }
 
+/* .queue-box > button {
+    margin: 10px;
+    
+} */
+
 .name-box {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
@@ -82,6 +92,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.button-box {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .parent-chore {
@@ -108,8 +124,12 @@ p {
     width: 150px;
 }
 
-#button-box {
-    margin: 10px auto;
+#addChore {
+    align-items: center;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
 }
 
 @media (width >= 600px) {

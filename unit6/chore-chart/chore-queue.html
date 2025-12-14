@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taufer Family Chore Chart</title>
     <meta name="author" content="Jake Taufer">
-    <script src="./main.js" defer></script>
+    <script src="./mvp/main.js" type="module" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -28,8 +28,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="queue-box" id="unassigned-chores">
+    <main id="chore-queue-main">
+        <!-- <div class="queue-box" id="unassigned-chores">
             <div class="name-box">
                 <h2>Unassigned Chores</h2>
             </div>
@@ -89,7 +89,10 @@
                     </li>
                 </ul>
             </form>
-        </div>
+            <div class="button-box">
+                <button type="button">Add Chore</button>
+            </div>
+        </div> -->
     </main>
 </body>
 </html>
